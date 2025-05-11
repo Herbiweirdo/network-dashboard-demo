@@ -167,7 +167,7 @@ def main():
         st.rerun()
 
     # Auto refresh
-    time.sleeps(2)
+    time.sleep(2)
     st.rerun()
 
 if __name__ == "__main__":
