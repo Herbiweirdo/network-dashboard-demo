@@ -97,7 +97,7 @@ def create_visualizations(df: pd.DataFrame):
 
         # Packets timeline
         df['timestamp'] = pd.to_datetime(df['timestamp'])
-        df_grouped = df.groupby(df['timestamp'].dt.floor('S')).size()
+        df_grouped = df.groupby(df['timestamp'].dt.floor('s')).size()
         fig_timeline = px.line(
             x=df_grouped.index,
             y=df_grouped.values,
